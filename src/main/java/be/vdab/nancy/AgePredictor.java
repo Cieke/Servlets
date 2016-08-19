@@ -20,10 +20,16 @@ public class AgePredictor extends HttpServlet{
 
 
        // resp.setHeader("kevin", "Hallo");
-        resp.setHeader("Content-Type", "text/plain");
+        resp.setHeader("Content-Type", "html");
 
         //String agent = req.getHeader("User-Agent");
-        resp.setHeader("Content-Type", "image/jpeg");
+        //resp.setHeader("Content-Type", "image/jpeg");
+        //resp.setContentType("image/jpeg");
+        //resp.setStatus(307);
+        //resp.setHeader("Location", "http://www.google.com");
+        //of:
+       // resp.sendRedirect("http://www.google.com"); //sugar-method of convenience method
+
 
         System.out.println(req.getHeader("Host"));
 
